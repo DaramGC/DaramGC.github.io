@@ -172,7 +172,9 @@ kramdown:
     block:
       line_numbers: false
   math_engine: katex
-  math_engine_opts: {}
+  math_engine_opts: {
+    output: mathml
+  }
 
 compress_html:
   clippings: all
