@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 베타 분포와 디리클레 분포 하이퍼파라미터값 (Beta distribution and Dirichlet distribution hyperparameter)
 parent: 확률과 통계
 ---
@@ -30,6 +30,7 @@ $$\alpha=11$$이고 $$\beta=8$$일때 위 식을 만족한다 <br>
 |$$X_2 = 7$$|$$\alpha_2 = 8$$|
 |$$X_3 = 3$$|$$\alpha_3 = 4$$|
 
----
+- - -
 베타분포의 경우 하이퍼파라미터에 따라 그려지는 그래프 모양이 다른데 헷갈리지 않도록 하자! (물론 디리클레 분포도 하이퍼파라미터에 따라 그려지는 그래프 모양이 다릅니다~)
+
 

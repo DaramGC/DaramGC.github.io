@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: '[Numpy] 파이썬 numpy.transpose() 함수'
 parent: Python 라이브러리
 ---

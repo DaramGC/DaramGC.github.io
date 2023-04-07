@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Just the Docs
-description: A Jekyll theme for documentation
+title: Untitled
+description: CS Blog
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://daramgc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: DaramGC/DaramGC.github.io # for github-metadata
@@ -99,8 +99,8 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/just-the-docs/just-the-docs"
+  "no link zz":
+    - ""
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
@@ -111,8 +111,8 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-  - title: Link
-    url: https://github.com/just-the-docs/just-the-docs
+  - title: Github
+    url: https://github.com/DaramGC
 
 # Footer content
 # appears at the bottom of every page's main content
