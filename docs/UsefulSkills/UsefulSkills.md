@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Utilities
-nav_order: 4
+title: 제목미지정
+nav_order: 10
 has_children: true
-permalink: docs/utilities
+permalink: docs/UsefulSkills
 ---
 
 # Utilities
