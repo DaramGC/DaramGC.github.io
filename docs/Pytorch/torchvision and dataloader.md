@@ -50,7 +50,7 @@ print(train_loader.dataset.data[125].max()) # --> 255
 print(train_loader.dataset.data[125].min()) # --> 4
 ```
 
-**train_loader**도 -1 ~ 1 이 아닌 0 ~ 255 의 값을 뱉는다. 뭔가 이상하다~~(이상해이상해살려줘)~~. 내가 인터넷에서 잘못된 코드를 본 줄 알고 구글에 "파이토치 CIFAR10 데이터셋 다운로드"를 계속 검색해 봤는데 다 비슷하게 구현해 놓았다. 결국에는 구글 "pytorch transform did not work"를 검색해 봤다. 근데 나같은 사람이 한둘이 아니였는지 외국 사이트에 비슷한 질문이 있어 들어가봤다. 결론은 **train_loader**를 iterator로 부를 때만 데이터 셋에 **transform**이 적용된다고 한다. 바로 해보았다.
+**train_loader**도 -1 ~ 1 이 아닌 0 ~ 255 의 값을 뱉는다. 뭔가 이상하다. 내가 인터넷에서 잘못된 코드를 본 줄 알고 구글에 "파이토치 CIFAR10 데이터셋 다운로드"를 계속 검색해 봤는데 다 비슷하게 구현해 놓았다. 결국에는 구글 "pytorch transform did not work"를 검색해 봤다. 근데 나같은 사람이 한둘이 아니였는지 외국 사이트에 비슷한 질문이 있어 들어가봤다. 결론은 **train_loader**를 iterator로 부를 때만 데이터 셋에 **transform**이 적용된다고 한다. 바로 해보았다.
 
 ```python
 i = iter(train_loader)  # --> iterator 가져오기
