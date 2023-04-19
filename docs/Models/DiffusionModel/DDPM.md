@@ -65,7 +65,7 @@ plt.plot(alpha_bar_t)
 plt.title("alpha_bar_t")
 plt.show()
 ```
-![screenshot](..\images\화면 캡처 2023-04-19 153343.png)
+![screenshot](..\images\153343.png)
 
 $$\bar \alpha_t$$의 값이 1에서 0으로 가는 모습을 볼 수 있다. 그렇다면 결국 마지막 이미지 분포인 $$x_T$$는 $$N(0, I)$$이라고 볼 수 있다. (T=1000에서 $$\bar \alpha_t = 0$$이기 때문!). 하지만 $$\bar \alpha_T$$는 0에 가까운 수이기 때문에 완전한 Normal Distribution이라고는 볼 수 없다.
 

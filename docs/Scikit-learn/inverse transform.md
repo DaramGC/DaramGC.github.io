@@ -68,4 +68,4 @@ ax3.axis("off")
 
 아래에 귀여운 개구리들을 볼 수 있다!
 
-![screenshot](..\images\화면 캡처 2023-04-14 115209.png)
+![screenshot](..\images\115209.png)
