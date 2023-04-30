@@ -171,10 +171,7 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: false
-  math_engine: katex
-  math_engine_opts: {
-    output: mathml
-  }
+  mathjax: true
 
 compress_html:
   clippings: all
