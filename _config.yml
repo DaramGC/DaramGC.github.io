@@ -184,4 +184,4 @@ compress_html:
   #   envs: all
 
 include:
-  - docs/Publications/index.html
+  - docs/Publications/dc-vsr.html
