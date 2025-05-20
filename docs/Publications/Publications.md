@@ -3,7 +3,7 @@ layout: default
 title: Publications
 nav_order: 100
 has_children: true
-permalink: docs/ProbabilityAndStatistic
+permalink: docs/Publications
 ---
 
 # Utilities
