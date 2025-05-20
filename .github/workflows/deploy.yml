@@ -47,7 +47,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
-          name: github-pages
 
   deploy:
     environment:
@@ -59,6 +58,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        with:
-          name: github-pages
 
