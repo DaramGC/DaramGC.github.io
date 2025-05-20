@@ -183,7 +183,5 @@ compress_html:
   # ignore:
   #   envs: all
 
-- uses: actions/upload-artifact@v4
-
 include:
   - docs/Publications/dc-vsr.html
