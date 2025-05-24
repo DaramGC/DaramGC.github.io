@@ -34,6 +34,32 @@
             background-position: 0% 50%;
         }
     }
+
+    .twentytwenty-container {
+      display: flex;
+      width: 100%;
+      height: 500px; /* 원하는 고정 높이 */
+      background-color: black;
+    }
+
+    .twentytwenty-container .video {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .twentytwenty-container .video video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* 비율 유지하며 잘리지 않음 */
+      background-color: black;
+      display: block;
+    }
   </style>
 
 
@@ -169,6 +195,22 @@
 
         <div class="item">
           <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5625">
+            <div class="desc">Old Video</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos/old_video2.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos/sr_old_video2.mp4" type="video/mp4">
+              </video> 
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5625">
             <div class="desc">AIGC Video</div>
             <div class="video">
               <video muted autoplay="autoplay" loop="loop" width="100%">
@@ -194,6 +236,22 @@
             <div class="video">
               <video muted autoplay="autoplay" loop="loop" width="100%">
                 <source src="./assets/videos/sr002.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5625">
+            <div class="desc">Low-resolution Video</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos/cook.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos/sr_cook.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -227,15 +285,15 @@
 
         <div class="item">
           <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5625">
-            <div class="desc">AIGC Video</div>
+            <div class="desc">Old Video</div>
             <div class="video">
               <video muted autoplay="autoplay" loop="loop" width="100%">
-                <source src="./assets/videos/00_speedup30fps.mp4" type="video/mp4">
+                <source src="./assets/videos/old_video1.mp4" type="video/mp4">
               </video> 
             </div>
             <div class="video">
               <video muted autoplay="autoplay" loop="loop" width="100%">
-                <source src="./assets/videos/sr_00.mp4" type="video/mp4">
+                <source src="./assets/videos/sr_old_video1.mp4" type="video/mp4">
               </video> 
             </div>
           </div>
@@ -391,7 +449,7 @@
         <!-- <div class="column is-four-fifths"> -->
         <div class="column">
           <div class="content main_title">
-            <br> <b>DC-VSR</b> is video super-resolution model that breathes life into low-res footage with fine detail and clarity.
+            <br> <b>DC-VSR</b> is video super-resolution model that breathes life into low-resolution footages with fine detail and clarity.
           </div>
           <div class="hr"></div>
         </div>
