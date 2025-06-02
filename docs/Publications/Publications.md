@@ -37,19 +37,21 @@ permalink: docs/Publications
       {% if paper.authors %}
         {% assign coworkers = paper.coworker | default: 0 | plus: 0 %}
         <div><em>
-        {% for author in paper.authors %}
-            {% if author == "Janghyeok Han" %}
-                <strong>{{ author }}</strong>
-            {% else %}
-                {{ author }}
-            {% endif %}
-
-            {% if forloop.index0 < coworkers and 1 != coworkers %}
-                <sup>†</sup>
-            {% endif %}
-
-            {% unless forloop.last %}, {% endunless %}
-        {% endfor %}
+            {% for author in paper.authors %}
+                {% if author == "Janghyeok Han" %}
+                    {% if forloop.index0 < coworkers and 1 != coworkers %}
+                        <strong>{{ author }}</strong><sup>†</sup>{% unless forloop.last %},{% endunless %}
+                    {% else %}
+                        <strong>{{ author }}</strong>{% unless forloop.last %},{% endunless %}
+                    {% endif %}
+                {% else %}
+                    {% if forloop.index0 < coworkers and 1 != coworkers %}
+                        {{ author }}<sup>†</sup>{% unless forloop.last %},{% endunless %}
+                    {% else %}
+                        {{ author }}{% unless forloop.last %},{% endunless %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
         </em></div>
       {% endif %}
         <div>
