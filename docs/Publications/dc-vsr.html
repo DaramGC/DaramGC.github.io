@@ -548,6 +548,66 @@
   </div>
 </div>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">DSSAG: A General Technique for Visual Synthesis</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>Detail-Suppression Self-Attention Guidance (DSSAG)</b> can enhance various visual synthesis tasks, such as image and video generation.
+            DSSAG provides additional guidance within the Classifier-Free Guidance (<a href="https://arxiv.org/abs/2207.12598" target="_blank">CFG</a>) mechanism by degrading the predicted unconditional noise, without requiring an additional feed-forward pass. 
+            Compared to other diffusion guidance approaches, such as <a href="https://arxiv.org/abs/2210.00939" target="_blank">SAG</a> and <a href="https://arxiv.org/abs/2403.17377" target="_blank">PAG</a>, DSSAG achieves comparable performance while being 1.5× faster when combined with CFG. 
+            The table below presents Inception Score (IS) and Fréchet Inception Distance (FID) of diffusion guidance approaches on image synthesis task using CFG. The best and second-best scores are marked in <b>bold</b> and <u>underline</u>, respectively.
+          </p>
+          <div class="column">
+            <img src="./assets/images/comp_dssag.png" />
+          </div>
+
+          <div class="box has-background-white p-6">
+            <h2 class="title is-3 has-text-centered has-text-info mb-4">Stable Diffusion 1.5v</h2>
+
+            <div class="column has-text-centered">
+              <span class="link-block">
+                  <a href="https://colab.research.google.com/drive/1K4bA3JSE5_2EI7WDpZV0V0Hx3RHie6rT?usp=sharing" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <img src="https://colab.research.google.com/img/colab_favicon_256px.png" width="32" alt="Colab Icon">
+                    </span>
+                    <span>Colab</span>
+                  </a>
+                </span>
+
+            <figure class="image">
+              <img src="./assets/images/sd.png" />
+            </figure>
+          </div>
+
+          <div class="box has-background-white p-6">
+            <h2 class="title is-3 has-text-centered has-text-danger mb-4">Stable Diffusion XL</h2>
+
+            <div class="column has-text-centered">
+              <span class="link-block">
+                  <a href="https://colab.research.google.com/drive/1KuO7TrXqn4RVYlI1FzTtGaBj3PSMWS-F?usp=sharing" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <img src="https://colab.research.google.com/img/colab_favicon_256px.png" width="32" alt="Colab Icon">
+                    </span>
+                    <span>Colab</span>
+                  </a>
+                </span>
+
+            <figure class="image">
+              <img src="./assets/images/sdxl.png" />
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
